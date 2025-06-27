@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabhi Pandey | Portfolio</title>
+  <link rel="icon" href="surabhi-icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background: radial-gradient(circle at center, #1b1c1e, #0d0d0d);
+      color: #e0e0e0;
+      line-height: 1.6;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #0d0d0d;
+      color: #59d6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 9999;
+    }
+
+    header {
+      background: linear-gradient(to right, #222, #111);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #59d6ff;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+      background: rgba(10, 10, 10, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,255,255,0.1);
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      color: #59d6ff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #59d6ff;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background: #33bbff;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    .contact-icons a img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .message-box {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .message-box form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .message-box input,
+    .message-box textarea {
+      padding: 0.75rem;
+      width: 80%;
+      max-width: 500px;
+      background: #0d0d0d;
+      border: 1px solid #444;
+      color: #59d6ff;
+      border-radius: 5px;
+      font-family: 'Exo 2', sans-serif;
+    }
+    .message-box button {
+      padding: 0.75rem 2rem;
+      background: #59d6ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .message-box button:hover {
+      background: #33bbff;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="preloader">Loading Surabhi’s World…</div>
+
+  <header>
+    <img src="surabhi-icon.png" alt="Surabhi Icon" width="40" height="40">
+    <h1>Surabhi Pandey</h1>
+    <p>Machine Learning | Research | Creative Tech</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Surabhi Pandey — a Machine Learning enthusiast with a passion for research, creativity, and real-world impact. I enjoy applying AI to meaningful domains, from environmental sustainability to automation and decision-making. I'm curious, driven by ideas, and always exploring intersections between technology and human problems.
+    </p>
+    <ul>
+      <li>🤖 Machine Learning & Deep Learning</li>
+      <li>🧪 Research & Data Analysis</li>
+      <li>🌍 Social Impact Tech</li>
+      <li>📊 Visual storytelling & scientific communication</li>
+      <li>🛠️ Building tools that matter</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-entry">
+      <h3>B.Sc (Hons) in Data Science and Artificial Intelligence</h3>
+      <p>Indian Institute of Technology, Guwahati</p>
+      <p>2023 – 2027</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Machine Learning & Deep Learning</li>
+      <li>Python, NumPy, Pandas, Scikit-learn, Tensorflow</li>
+      <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
+      <li>Model Selection & Evaluation</li>
+      <li>Probability & Statistics</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    <div class="project-card">
+      <img src="heart_attack.jpg" alt="Heart Attack Detector">
+      <h3>Heart Attack Risk Detector</h3>
+      <p>A logistic regression-based application that predicts the likelihood of heart attacks using medical data inputs.</p>
+      <a href="https://github.com/surabhipandey18/heartattack">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="animal class.jpg" alt="Animal Classifier">
+      <h3>Animal Classification</h3>
+      <p>Image classification project for recognizing different animals using a custom CNN pipeline.</p>
+      <a href="https://github.com/surabhipandey18/Animals-Classification">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="ml.jpg" alt="Model Selector">
+      <h3>ML Model Selector</h3>
+      <p>Tool for selecting the best machine learning model based on dataset performance and accuracy evaluation.</p>
+      <a href="https://github.com/surabhipandey18/Model-Selector">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="hate_crime.png" alt="Hate Crime Visualization">
+      <h3>Hate Crime Predictor</h3>
+      <p>Used Data Visualisation method to visualize hate-crime dataset.</p>
+      <a href="https://github.com/surabhipandey18/HateCrime">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="pdf.png" alt="Probability Distribution">
+      <h3>Probability Distribution Visualizer</h3>
+      <p>Interactive visualization of probability distributions to explore their properties and comparisons.</p>
+      <a href="https://github.com/surabhipandey18/Probability-Distribution">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="personal vlog.jpg" alt="Personal Vlog ">
+      <h3>Personal Vlog and Diary Gallery</h3>
+      <p>A video-diary Gallery.</p>
+      <a href="https://github.com/surabhipandey18/personal_vlog">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+    color: #102a43;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+    color: #334e68;
+    margin-bottom: 1rem;
+  }
+
+  .project-card a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 600;
+  }
+</style>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>You can explore my full CV to see research projects, technical skills, and certifications.</p>
+  <a class="resume-button" href="Surabhi Pandey.pdf" download>Download My CV</a>
+</section>
+
+<section id="contact">
+    <h2>Connect With Me</h2>
+    <div class="contact-icons">
+      <!-- Use your own small icon images below -->
+      <a href="mailto:pandeysurabhi59@gmail.com" target="_blank" title="Email">
+        <img src="gmail.png" alt="Email" width="30" height="30">
+      </a>
+      <a href="https://www.linkedin.com/in/surabhi-pandey18" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <img src="linkedin.png" alt="LinkedIn" width="30" height="30">
+      </a>
+      <a href="https://github.com/surabhipandey18" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <img src="github.png" alt="GitHub" width="30" height="30">
+      </a>
+    </div>
+  </section>
+
+<section class="message-box">
+  <h2>Send Me a Message</h2>
+  <form action="https://formsubmit.co/pandeysurabhi59@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Surabhi Pandey. Built with ❤️ 
+</footer>
+<script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      if (preloader) {
+        preloader.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
