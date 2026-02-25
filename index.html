@@ -16,8 +16,8 @@
 
     body {
       font-family: 'Exo 2', sans-serif;
-      background: radial-gradient(circle at center, #1b1c1e, #0d0d0d);
-      color: #e0e0e0;
+      background: radial-gradient(circle at center, #a9d8f4, #e0dada);
+      color: #000000;
       line-height: 1.6;
       background-attachment: fixed;
       overflow-x: hidden;
@@ -37,8 +37,8 @@
     }
 
     header {
-      background: linear-gradient(to right, #222, #111);
-      color: #fff;
+      background: linear-gradient(to right, #a9d8f4, #dbd6d6);
+      color: #000000;
       padding: 2rem;
       text-align: center;
       animation: fadeInDown 1.2s ease-out;
@@ -52,7 +52,7 @@
     }
 
     nav {
-      background: #111;
+      background: #000000;
       padding: 1rem;
       display: flex;
       justify-content: center;
@@ -62,7 +62,7 @@
     }
 
     nav a {
-      color: #59d6ff;
+      color: #a9d8f4;
       font-weight: bold;
       text-decoration: none;
       text-transform: uppercase;
@@ -77,15 +77,16 @@
     section {
       max-width: 1000px;
       margin: 2rem auto;
-      padding: 2rem 1rem;
-      background: rgba(10, 10, 10, 0.85);
+      padding: 2rem 4rem;
+      background: #000000;
+      color: #a9d8f4;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,255,255,0.1);
     }
 
     section h2 {
       font-size: 2.5rem;
-      color: #59d6ff;
+      color: #a9d8f4;
       margin-bottom: 1rem;
       text-align: center;
     }
@@ -182,10 +183,10 @@
   </style>
 </head>
 <body>
-  <div id="preloader">Loading Surabhi’s World…</div>
+  <div id="preloader">Surabhi Pandey Presents</div>
 
   <header>
-    <img src="surabhi-icon.png" alt="Surabhi Icon" width="40" height="40">
+    <img src="surabhi-icon.png" alt="Surabhi Icon" width="50" height="50">
     <h1>Surabhi Pandey</h1>
     <p>Machine Learning | Research | Creative Tech</p>
   </header>
@@ -199,19 +200,23 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m Surabhi Pandey — a Machine Learning enthusiast with a passion for research, creativity, and real-world impact. I enjoy applying AI to meaningful domains, from environmental sustainability to automation and decision-making. I'm curious, driven by ideas, and always exploring intersections between technology and human problems.
-    </p>
-    <ul>
-      <li>Machine Learning & Deep Learning</li>
-      <li>Research & Data Analysis</li>
-      <li>Social Impact Tech</li>
-      <li>Visual storytelling & scientific communication</li>
-      <li>Building tools that matter</li>
-    </ul>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m Surabhi Pandey — a Machine Learning student at IIT Guwahati focused on research-driven AI systems in healthcare, biomedical sensing, and computer vision. My work centers on building models that are not only accurate, but clinically meaningful and technically rigorous.
+  </p>
+  <p>
+    I am particularly interested in medical imaging, prosthetic and wearable sensor data (IoT-based systems), and interpretable deep learning. I enjoy studying how models behave under real-world constraints such as patient variability, noisy signals, and domain shifts.
+  </p>
+
+  <ul>
+    <li>Healthcare AI & Medical Imaging</li>
+    <li>Biomedical IoT & Sensor Signal Modeling</li>
+    <li>Computer Vision & Deep Learning</li>
+    <li>Explainable and Robust AI Systems</li>
+    <li>Research-oriented Machine Learning</li>
+  </ul>
+</section>
 
   <section id="education">
     <h2>Education</h2>
@@ -237,51 +242,41 @@
 <section id="projects">
   <h2>Projects</h2>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+
     <div class="project-card">
-      <img src="heart-attack.png" alt="Heart Attack Predictor">
-      <h3>Heart Attack Risk Predictor</h3>
-      <p>A logistic regression-based application that predicts the likelihood of heart attacks using medical data inputs.</p>
-      <a href="https://github.com/surabhipandey18/heartattack">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <img src="manosakhi.png" alt="ManoSakhi">
-      <h3>ManoSakhi- Your Mental Health Companion</h3>
-      <p>An empathetic chatbot which listens to you, gives intelligent and kind responses Made with Gemini API, deployed on HuggingFace.</p>
-      <a href="https://github.com/surabhipandey18/ManoSakhi">View on GitHub</a>
+      <h3>Explainable Deep Learning for Brain Tumor MRI</h3>
+      <p>Trained a ResNet50 model for brain tumor classification (94% test accuracy) using patient-level splits. Integrated Grad-CAM and segmentation-guided counterfactual MRI generation to quantify causal dependence using Delta-Drop and Delta-Focus metrics.</p>
+      <a href="https://github.com/surabhipandey18/Grad-CAM-Brain-Tumor--Thoughtful-Exploration">Grad-CAM Repository</a>
       <br>
-      <a href="https://huggingface.co/spaces/surabhipandey18/Mano-Sakhi">View Website</a>
+      <a href="https://github.com/surabhipandey18/Counterfactual-Brain-Tumor">Counterfactual Repository</a>
     </div>
+
     <div class="project-card">
-      <img src="y-bocs.png" alt="OCD Visualization">
-      <h3>OCD Visualisation and Y-BOCS Test</h3>
-      <p>Used Data Visualisation method to visualize OCD symptoms and it's division among groups and A website which keeps count of Y-BOCS test score of OCD Patients.</p>
-      <a href="https://github.com/surabhipandey18/OCD-Visualization">View on GitHub</a>
-      <br>
-      <a href = "https://ocd-visualization.vercel.app/">Wiew Website</a>
+      <h3>OPD Record Management and Disease Prediction</h3>
+      <p>Full-stack healthcare application with ML-based disease prediction. Built using Flask API, MySQL backend, and HTML/CSS frontend for managing patient records and symptom-based predictions.</p>
+      <a href="https://github.com/surabhipandey18/DocPal">View on GitHub</a>
     </div>
+
     <div class="project-card">
-      <img src="animal-classification.png" alt="Animal Classifier">
-      <h3>Animal Classification</h3>
-      <p>Image classification project for recognizing different animals using a custom CNN pipeline.</p>
-      <a href="https://github.com/surabhipandey18/Animals-Classification">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <img src="stats-court logo.png" alt="Stats Court Logo">
-      <h3>Stats Court- One Place Hypothesis Testing</h3>
-      <p>Stats Court is a web-based platform that enables users to upload datasets (CSV) and perform statistical hypothesis testing with automated generation of structured analytical reports.</p>
+      <h3>Stats Court – Automated Hypothesis Testing Platform</h3>
+      <p>Web-based statistical testing system allowing CSV upload and automated hypothesis testing with structured analytical report generation. Supports classical statistical workflows with interpretive summaries.</p>
       <a href="https://github.com/surabhipandey18/stats-courtr">View on GitHub</a>
       <br>
       <a href="https://statscourtroom.onrender.com/">View Website</a>
     </div>
+
     <div class="project-card">
-      <img src="pdf (2).png" alt="Probability Distribution">
-      <h3>Probability Distribution Visualizer and Prediction</h3>
-      <p>Interactive visualization of probability distributions and its prediction based on given parameters to explore their properties and comparisons.</p>
-      <a href="https://github.com/surabhipandey18/Probability-Distribution">View on GitHub</a>
+      <h3>ManoSakhi – AI Mental Health Companion</h3>
+      <p>Gemini API-powered conversational system deployed on HuggingFace. Includes crisis keyword detection and intelligent response generation for supportive mental health interaction.</p>
+      <a href="https://github.com/surabhipandey18/ManoSakhi">View on GitHub</a>
+      <br>
+      <a href="https://huggingface.co/spaces/surabhipandey18/Mano-Sakhi">View Website</a>
     </div>
+
     <div style="display: flex; justify-content: center; align-items: center; height: 160px;">
-      <p style="margin: 0;">For more projects of mine, look for me on <a href="https://github.com/surabhipandey18" target="_blank">GitHub</a> :)</p>
+      <p style="margin: 0;">For more projects, visit my <a href="https://github.com/surabhipandey18" target="_blank">GitHub</a>.</p>
     </div>
+
   </div>
 </section>
 
@@ -330,11 +325,11 @@
 <section id="resume">
   <h2>Resume</h2>
   <p>You can explore my full CV to see research projects, technical skills, and certifications.</p>
-  <a class="resume-button" href="IIT_Guwahati_Résumé (2).pdf" download>Download My CV</a>
+  <a class="resume-button" href="Surabhi Pandey Resume.pdf" download>Download My CV</a>
 </section>
 
 <section id="contact">
-    <h2>Connect With Me</h2>
+    <h2 align="center">Connect With Me</h2>
     <div class="contact-icons">
       <!-- Use your own small icon images below -->
       <a href="mailto:pandeysurabhi59@gmail.com" target="_blank" title="Email">
@@ -358,6 +353,7 @@
     <button type="submit">Send</button>
   </form>
 </section>
+
 
 <footer>
   © 2025 Surabhi Pandey. Built with ❤️ 
